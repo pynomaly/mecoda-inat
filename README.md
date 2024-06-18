@@ -83,7 +83,7 @@ count = get_count_by_taxon()
 
 # Models
 
-The models are defined using objects from [Pydantic] (https://pydantic-docs.helpmanual.io/). Type validation of all attributes is done and data can be extracted with the `dict` or` json` method. 
+The models are defined using objects from [Pydantic](https://pydantic-docs.helpmanual.io/). Type validation of all attributes is done and data can be extracted with the `dict` or` json` method. 
 
 ## Observation
 
@@ -120,7 +120,7 @@ The object `Observation` contains the information of each of the observations re
 
 ## Project
 
-The `Project` object contains the information of each of the projects registered in [INaturalist] (https://www.inaturalist.org/observations) and has the following attributes:
+The `Project` object contains the information of each of the projects registered in [INaturalist](https://www.inaturalist.org/observations) and has the following attributes:
 
 | Attribute | Type | Description | Default value |
 | -------- | ---- | ----------- | ----------------- |
