@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+*horas*
+__pycache__
+old_code
+*ipynb
+.coverage
+build/
+dist/
+*egg-info*
+tests/__init__.pyc
+.vscode/
+.envs
