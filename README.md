@@ -1,5 +1,3 @@
-<img src="docs/logo-cos4cloud-middle.png" alt="cos4cloud" width="400"/>
-
 Library to extract information collected in the INaturalist API. This library is part of MECODA (ModulE for Citizen Observatory Data Analysis), aimed to facilitate analysis and viewing of citizen science data.
 
 
@@ -41,12 +39,12 @@ With `get_obs` you can extract data from the observations collected in the API. 
 | `id_below` | Id observation must be below this number. It helps to split big queries | `id_below=20000` |
 
 For the `taxon` argument the possible values are: 
-`chromista`, `protozoa`, `animalia`, `mollusca`, `arachnida`, `insecta`, `aves`, `mammalia`, `amphibia`, `reptilia`, `actinopterygii`, `fungi`, `plantae`, `cnidaria`, `annelida`, `platyhelminthes`, `echinodermata`, `bryozoa`, `porifera`, `elasmobranchii`, `crustacea` y `ctenophora`.
+`chromista`, `protozoa`, `animalia`, `mollusca`, `arachnida`, `insecta`, `aves`, `mammalia`, `amphibia`, `reptilia`, `actinopterygii`, `fungi`, `plantae`.
 
 Example of use:
 
 ```python
-from mecoda_minka import get_obs
+from mecoda_inat import get_obs
 
 observations = get_obs(year=2018, taxon='fungi')
 
@@ -61,9 +59,9 @@ With `get_project` you can get the information of the projects collected in the 
 Example of use:
 
 ```python
-from mecoda_minka import get_project
+from mecoda_inat import get_project
 
-projects = get_project("urbamar")
+projects = get_project("bugs-in-flight")
 
 ```
 `projects` es siempre una lista de objetos [`Project`](#project).
@@ -76,7 +74,7 @@ With `get_count_by_taxon` we can know the number of observations that correspond
 Example of use:
 
 ```python
-from mecoda_minka import get_count_by_taxon
+from mecoda_inat import get_count_by_taxon
 
 count = get_count_by_taxon()
 
@@ -89,7 +87,7 @@ The models are defined using objects from [Pydantic] (https://pydantic-docs.help
 
 ## Observation
 
-The object `Observation` contains the information of each of the observations registered in [Minka] (https://minka-sdg.org/observations) and has the following attributes:
+The object `Observation` contains the information of each of the observations registered in [INaturalist](https://www.inaturalist.org/observations) and has the following attributes:
 
 | Attribute | Type | Description | Default value |
 | -------- | ---- | ----------- | ----------------- |
@@ -122,7 +120,7 @@ The object `Observation` contains the information of each of the observations re
 
 ## Project
 
-The `Project` object contains the information of each of the projects registered in [Minka] (https://minka-sdg.org/observations) and has the following attributes:
+The `Project` object contains the information of each of the projects registered in [INaturalist] (https://www.inaturalist.org/observations) and has the following attributes:
 
 | Attribute | Type | Description | Default value |
 | -------- | ---- | ----------- | ----------------- |
@@ -164,8 +162,8 @@ To contribute to this library, follow the steps below.
 * Clone your fork and enter the directory
 
     ```bash
-    git clone git@github.com:<your_username>/mecoda_minka.git
-    cd mecoda_minka
+    git clone git@github.com:<your_username>/mecoda_inat.git
+    cd mecoda_inat
     ```
 * Configure your virtualenv to run the tests:
     ```bash
@@ -173,7 +171,7 @@ To contribute to this library, follow the steps below.
     source env/bin/activate
     ```
 
-* Install `mecoda_minka` and its dependencies.
+* Install `mecoda_inat` and its dependencies.
     ```bash
     pip3 install -e .
     pip3 install -r requirements-dev.txt
