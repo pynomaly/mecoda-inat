@@ -10,7 +10,7 @@ with open("README.md", "r") as readme_file:
 
 setup(
     name="mecoda-inat",
-    version="1.6.1",
+    version="1.0.0",
     description="Library to download information using INaturalist API.",
     author="Ana Alvarez",
     author_email="ana.alvarez@icm.csic.es",
@@ -38,5 +38,5 @@ setup(
         "Topic :: Utilities",
         "Natural Language :: English",
     ],
-    install_requires=["pydantic", "requests", "pandas", "folium"],
+    install_requires=["pydantic", "requests", "pandas"],
 )

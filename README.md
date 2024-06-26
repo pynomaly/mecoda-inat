@@ -108,6 +108,7 @@ The object `Observation` contains the information of each of the observations re
 | `license_obs` | `Optional[str]` | Observation is under this license | `None` |
 | `user_login` | `Optional[str]` | User registration name | `None` |
 | `photos` | `List[Photo]` | Object lists [`Photo`](#photo), that include information about each photograph of the observation | `[]` |
+| `identifications_count` | `Optional[int]` | Number of identifications to the observation | `None` |
 | `num_identification_agreements` | `Optional[int]` | Number of votes in favor of identification | `None` |
 | `num_identification_disagreements` | `Optional[int]` | Number of unfavorable votes to identification | `None` |
 | `kingdom` | `Optional[str]` | Kingdom to which the observation belongs  | `None` |
