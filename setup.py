@@ -10,7 +10,7 @@ with open("README.md", "r") as readme_file:
 
 setup(
     name="mecoda-inat",
-    version="1.0.1",
+    version="1.0.2",
     description="Library to download information using INaturalist API.",
     author="Ana Alvarez",
     author_email="ana.alvarez@icm.csic.es",

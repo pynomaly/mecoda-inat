@@ -8,7 +8,6 @@ from .mecoda_inat import (
     get_project,
 )
 from .models import ICONIC_TAXON, TAXONS, Observation, Photo, Project
-from .views import create_heatmap, create_markercluster
 
 __all__ = [
     "Observation",
